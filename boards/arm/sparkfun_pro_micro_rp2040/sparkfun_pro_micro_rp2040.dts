@@ -70,6 +70,13 @@
 	pinctrl-names = "default";
 };
 
+&i2c0 {
+	status = "okay";
+	pinctrl-0 = <&i2c0_default>;
+	pinctrl-names = "default";
+	clock-frequency = <I2C_BITRATE_FAST>;
+};
+
 &i2c1 {
 	status = "okay";
 	pinctrl-0 = <&i2c1_default>;
